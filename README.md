@@ -1,6 +1,6 @@
 # プログラミングに関するメモ
 
-# SWift
+# Swift
 
 ## async, await
 
@@ -28,7 +28,7 @@ func someFunction() {
     }
 }
 ```
-- async の付いた関数は、async な関数か、　Task { } の中でしか呼べない
+- async の付いた関数は、async な関数か、Task { } の中でしか呼べない
 - async の付いた関数は、呼び出し時 await をつけないと呼べない
 
 
@@ -51,7 +51,7 @@ func test()  {
 
 ```
 は、fetchData での処理が重ければ
-A →　X → B → Y になる
+A → X → B → Y になる
 
 ### 非同期に処理する2
 
