@@ -27,10 +27,10 @@ func someFunction() {
         await fetchData()
     }
 }
-
 ```
 - async の付いた関数は、async な関数か、　Task { } の中でしか呼べない
 - async の付いた関数は、呼び出し時 await をつけないと呼べない
+
 
 ### 非同期に処理する
 
@@ -52,3 +52,32 @@ func test()  {
 ```
 は、fetchData での処理が重ければ
 A →　X → B → Y になる
+
+### 非同期に処理する2
+
+```
+func fetchA() async -> String {
+    try? await Task.sleep(nanoseconds: 1_000_000_000)
+    return "A"
+}
+
+func fetchB() async -> String {
+    try? await Task.sleep(nanoseconds: 1_000_000_000)
+    return "B"
+}
+
+func runInParallel() async {
+    print("Start")
+
+    // async let で並行に開始
+    async let resultA = fetchA()
+    async let resultB = fetchB()
+
+    // 両方の結果を同時に待つ（並行に待機）
+    let (a, b) = await (resultA, resultB)
+
+    print("Results: \(a), \(b)")
+}
+```
+
+
