@@ -32,7 +32,6 @@ func someFunction() {
 - async の付いた関数は、呼び出し時 await をつけないと呼べない
 <br>
 <br>
-
 ### 非同期に処理する
 
 ```Swift
