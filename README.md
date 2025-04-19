@@ -6,7 +6,7 @@
 
 ### さいしょの async
 
-```
+```Swift
 func fetchData() async {
     // 非同期処理
 }
@@ -35,7 +35,7 @@ func someFunction() {
 
 ### 非同期に処理する
 
-```
+```Swift
 func fetchData() async {
     // 非同期処理
 }
@@ -53,10 +53,12 @@ func test()  {
 ```
 は、fetchData での処理が重ければ
 A → X → B → Y になる
+<br>
+<br>
 
 ### 非同期に処理する2
 
-```
+```Swift
 func fetchA() async -> String {
     try? await Task.sleep(nanoseconds: 1_000_000_000)
     return "A"
