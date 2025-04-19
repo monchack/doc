@@ -85,7 +85,6 @@ func runInParallel() async {
 ```
 <br>
 <br>
-<br>
 
 ### UIの更新
 UIKit（iOS）や AppKit（macOS）の内部はスレッドセーフ（＝複数スレッドから同時アクセスしても壊れない）に設計されていない。
