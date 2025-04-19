@@ -106,6 +106,21 @@ func updateLabel() {
     label.text = "Hello" // ✅ メインスレッドで安全に実行される
 }
 ```
+<br>
+
+### タスクのキャンセル
+```Swift
+func cancellableTask() async {
+    for i in 1...10 {
+        if Task.isCancelled {
+            print("キャンセルされました")
+            return
+        }
+        print("処理中 \(i)")
+        try? await Task.sleep(nanoseconds: 300_000_000)
+    }
+}
+```
 
 
 
