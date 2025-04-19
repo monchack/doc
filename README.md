@@ -55,6 +55,7 @@ func test()  {
 A → X → B → Y になる
 <br>
 <br>
+<br>
 
 ### 非同期に処理する2
 
@@ -82,5 +83,32 @@ func runInParallel() async {
     print("Results: \(a), \(b)")
 }
 ```
+<br>
+<br>
+<br>
+
+### UIの更新
+UIKit（iOS）や AppKit（macOS）の内部はスレッドセーフ（＝複数スレッドから同時アクセスしても壊れない）に設計されていない。
+@MainActor を使うことで「この関数はメインスレッドで実行せよ」と明示することができる。
+
+#### 関数の中
+```Swift
+func fetchUserData() async {
+    let user = await loadUserFromNetwork()
+
+    await MainActor.run {
+        self.label.text = user.name
+    }
+}
+```
+#### 関数自体を指定
+```Swift
+@MainActor
+func updateLabel() {
+    label.text = "Hello" // ✅ メインスレッドで安全に実行される
+}
+```
+
+
 
 
