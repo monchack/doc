@@ -1,6 +1,6 @@
-## async, await
+# async, await
 
-### さいしょの async
+## さいしょの async
 
 ```Swift
 func fetchData() async {
@@ -28,7 +28,7 @@ func someFunction() {
 - async の付いた関数は、呼び出し時 await をつけないと呼べない
 <br>
 
-### 非同期に処理する
+## 非同期に処理する
 
 ```Swift
 func fetchData() async {
@@ -81,11 +81,11 @@ func runInParallel() async {
 <br>
 <br>
 
-### UIの更新
+## UIの更新
 UIKit（iOS）や AppKit（macOS）の内部はスレッドセーフ（＝複数スレッドから同時アクセスしても壊れない）に設計されていない。
 @MainActor を使うことで「この関数はメインスレッドで実行せよ」と明示することができる。
 
-#### 関数の中
+### 関数の中
 ```Swift
 func fetchUserData() async {
     let user = await loadUserFromNetwork()
@@ -95,7 +95,7 @@ func fetchUserData() async {
     }
 }
 ```
-#### 関数自体を指定
+### 関数自体を指定
 ```Swift
 @MainActor
 func updateLabel() {
@@ -104,7 +104,7 @@ func updateLabel() {
 ```
 <br>
 
-### タスクのキャンセル
+## タスクのキャンセル
 ```Swift
 func cancellableTask() async {
     for i in 1...10 {
