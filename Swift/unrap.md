@@ -6,7 +6,7 @@
 let result = someOptional?.property
 ```
 
-## nil じゃない時だけアクセス
+## nil じゃない時だけ処理を行う
 
 ```Swift
 if let unwrappedName = name {
