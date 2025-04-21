@@ -14,6 +14,16 @@ if let unwrappedName = name {
 }
 ```
 
+### どれも nil じゃないことを一度に確認
+
+```Swift
+if let first = firstName, let last = lastName {
+    // どっちも nil じゃない
+} else　{
+    // 少なくともどっちかは nil
+}
+```
+
 ## nil の時は処理をやめる
 
 ```Swift
