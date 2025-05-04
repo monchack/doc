@@ -117,4 +117,4 @@ func cancellableTask() async {
     }
 }
 ```
-Task.cancel() を呼んでキャンセルする。
+`Task.cancel()` を呼んでキャンセルする。
