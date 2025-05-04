@@ -24,8 +24,8 @@ func someFunction() {
     }
 }
 ```
-- async の付いた関数は、async な関数か、Task { } の中でしか呼べない
-- async の付いた関数は、呼び出し時 await をつけないと呼べない
+- `async` の付いた関数は、`async` な関数か、`Task { }` の中でしか呼べない
+- `async` の付いた関数は、呼び出し時 `await` をつけないと呼べない
 <br>
 
 ## 非同期に処理する
@@ -46,7 +46,7 @@ func test()  {
 }
 
 ```
-は、fetchData での処理が重ければ
+は、`fetchData` での処理が重ければ
 A → X → B → Y になる
 <br>
 <br>
