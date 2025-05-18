@@ -1,5 +1,5 @@
-Comments 2607507  
-Strings C41A16  
+Comments 2607507   `#2607507`
+Strings C41A16  `#C41A16`
 Keywords 993399  
 Type Declaration 0B4F79 // class や struct の宣言  
 Other Declarations  0F68A0 // func やメンバなど、上記以外の宣言  
