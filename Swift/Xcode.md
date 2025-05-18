@@ -10,3 +10,9 @@ URLs 0E0EFF
 Current Line E8F2FF
 
 <span style="color: red; ">赤文字</span>です
+<code>#aa4400
+  <span
+    class="ml-1 d-inline-block border circle color-border-subtle"
+    style="background-color: #aa4400; height: 8px; width: 8px;"
+  ></span>
+</code>
