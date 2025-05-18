@@ -8,3 +8,5 @@ Other Functions and Method Names 6C36A9 // 利用したり呼び出している�
 URLs 0E0EFF  
 
 Current Line E8F2FF
+
+<span style="color: red; ">赤文字</span>です
