@@ -1,4 +1,4 @@
-Comments 2607507 
+Comments 2607507   
 Strings C41A16  
 Keywords 993399   
 Type Declaration 0B4F79 // class や struct の宣言  
