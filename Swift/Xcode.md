@@ -1,6 +1,6 @@
 Comments 2607507   `#2607507` 
-Strings C41A16  `#C41A16`
-Keywords 993399  
+Strings C41A16  `#c41a16`
+Keywords 993399   `#993399`
 Type Declaration 0B4F79 // class や struct の宣言  
 Other Declarations  0F68A0 // func やメンバなど、上記以外の宣言  
 Other Class Names 3900A0 // 利用する他のクラス  
